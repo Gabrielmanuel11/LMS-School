@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BeeInternational</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+        
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <header>
+            <div class="logo">
+              <a href="#"><img src="images/Logo fundo Transparente.png" alt=""></a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="course.html">Cursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Professores</a></li>
+                <li><a href="planos.html">Planos</a></li>
+              </ul>
+            </nav>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+          </header>
+        <!-- Home -->
+        
+            <h1>Meus professores</h1>
+            
+            <div class="professor">
+              <img src="images/pro2.webp" alt="Foto do professor 1">
+              <h2>Professor 1</h2>
+              <p>Descrição do professor 1</p>
+              <ul>
+                <li>Disciplina 1</li>
+                <li>Disciplina 2</li>
+                <li>Disciplina 3</li>
+              </ul>
+            </div>
+            
+            <div class="professor">
+              <img src="images/pro1.webp" alt="Foto do professor 2">
+              <h2>Professor 2</h2>
+              <p>Descrição do professor 2</p>
+              <ul>
+                <li>Disciplina 4</li>
+                <li>Disciplina 5</li>
+              </ul>
+            </div>
+
+            <div class="professor">
+                <img src="images/pro1.webp" alt="Foto do professor 2">
+                <h2>Professor 2</h2>
+                <p>Descrição do professor 2</p>
+                <ul>
+                  <li>Disciplina 4</li>
+                  <li>Disciplina 5</li>
+                </ul>
+              </div>
+
+        
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h3>Sobre Nós</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem, vel feugiat enim pharetra et. Donec rutrum lacinia nisl, vitae tincidunt lorem efficitur et.</p>
+                </div>
+                <div class="col-md-4">
+                  <h3>Redes Sociais</h3>
+                  <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h3>Contato</h3>
+                  <ul class="contact-info">
+                    <li><i class="fa fa-map-marker"></i> Endereço: Rua ABC, 123 - São Paulo/SP</li>
+                    <li><i class="fa fa-phone"></i> Telefone: (11) 1234-5678</li>
+                    <li><i class="fa fa-envelope"></i> Email: contato@empresa.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>&copy; 2023 Empresa XYZ. Todos os direitos reservados.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+  
+          <script>
+  
+                            // Exemplo de como mostrar mais informações ao clicar no nome do professor
+                const professores = document.querySelectorAll('.professor');
+
+                for (let i = 0; i < professores.length; i++) {
+                const nomeProfessor = professores[i].querySelector('h2');
+                const descricaoProfessor = professores[i].querySelector('p');
+                const disciplinasProfessor = professores[i].querySelector('ul');
+                
+                nomeProfessor.addEventListener('click', () => {
+                    descricaoProfessor.classList.toggle('visivel');
+                    disciplinasProfessor.classList.toggle('visivel');
+                });
+                }
+             
+  
+          </script>
+  
+  
+      </body>
+  
+  </html>
